@@ -1,0 +1,53 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  width: 100vw;
+}
+
+.landing{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header{
+  display: flex;
+  justify-content: left;
+  height: 95vh;
+  background-image: url("../img/landingBg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo{
+  width: 45px;
+  height: 35px;
+  margin: 7px 10px;
+}
+
+.title{
+  width: 300px;
+  align-self: center;
+  color: #FFFFFF;
+  position: absolute;
+}
+
+.headTitle{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.title-holder{
+  display: flex;
+  align-items: center;
+  margin: -70px 0px 0px;
+}
+
+.preposition{
+  font-size: 48px;
+  flex-grow: 1;
+}
+
+.additions{
+  margin-left: 20px;
+}

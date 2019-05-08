@@ -1,13 +1,8 @@
-body{
-  font-family: 'Montserrat', sans-serif;
-}
-
-#hamburger{
-  position: relative;
+.hamburger{
   width: 45px;
   height: 25px;
   cursor: pointer;
-  margin: 15px;
+  margin: 20px;
 
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -19,10 +14,10 @@ body{
   transition: .5s ease-in-out;
 }
 
-#hamburger span{
+.hamburger span{
   width: 35px;
   height: 2px;
-  background: black;
+  background: #FFFFFF;
   position: absolute;
   border-radius: 9px;
 
@@ -36,39 +31,43 @@ body{
   transition: .25s ease-in-out;
 }
 
-#hamburger span:nth-child(2) {
+.hamburger span:nth-child(2) {
   top: 8px;
 }
 
-#hamburger:hover span:nth-child(2){
+.hamburger:hover span:nth-child(2){
   width: 45px;
 }
 
-#hamburger:hover span:nth-child(2)::after{
+.hamburger:hover span:nth-child(2)::after{
   font-size: 10px;
+  font-weight: bolder;
+  color: #FFFFFF;
   content: 'menu';
 }
 
-#hamburger.open span:nth-child(1) {
+.hamburger.open span:nth-child(1) {
   top: 18px;
   width: 0%;
   left: 50%;
 }
 
-#hamburger.open span:nth-child(2) {
+.hamburger.open span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-#hamburger.open span:nth-child(1) {
+.hamburger.open span:nth-child(1) {
   top: 18px;
   width: 0%;
   left: 50%;
 }
 
-#hamburger.open:hover span:nth-child(2)::after{
+.hamburger.open:hover span:nth-child(2)::after{
   font-size: 10px;
+  font-weight: bolder;
+  color: #FFFFFF;
   content: 'close';
 }

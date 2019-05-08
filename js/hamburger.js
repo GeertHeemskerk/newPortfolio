@@ -1,5 +1,5 @@
 window.onload = function(){
-  var hamburger = document.getElementById('hamburger');
+  var hamburger = document.getElementsByClassName('hamburger')[0];
 
   hamburger.onclick = function(){
     hamburger.classList.toggle("open");

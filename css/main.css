@@ -130,7 +130,7 @@ figure{
   background: #FFB017;
 }
 
-svg{
+.comp-holder svg{
   height: 70px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }

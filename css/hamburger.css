@@ -2,7 +2,8 @@
   width: 45px;
   height: 25px;
   cursor: pointer;
-  margin: 20px;
+  margin: 15px 0px 0px 15px;
+  z-index: 4;
 
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);

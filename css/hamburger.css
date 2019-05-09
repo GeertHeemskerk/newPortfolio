@@ -2,7 +2,7 @@
   width: 45px;
   height: 25px;
   cursor: pointer;
-  margin: 15px 0px 0px 15px;
+  margin: 20px 0px 0px 15px;
   z-index: 4;
 
   -webkit-transform: rotate(0deg);
@@ -36,7 +36,7 @@
   top: 8px;
 }
 
-.hamburger:hover span:nth-child(2){
+/* .hamburger:hover span:nth-child(2){
   width: 45px;
 }
 
@@ -45,7 +45,7 @@
   font-weight: bolder;
   color: #FFFFFF;
   content: 'menu';
-}
+} */
 
 .hamburger.open span:nth-child(1) {
   top: 18px;
@@ -66,9 +66,9 @@
   left: 50%;
 }
 
-.hamburger.open:hover span:nth-child(2)::after{
+/* .hamburger.open:hover span:nth-child(2)::after{
   font-size: 10px;
   font-weight: bolder;
   color: #FFFFFF;
   content: 'close';
-}
+} */

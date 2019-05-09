@@ -8,7 +8,7 @@ body{
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    background-image: url("../img/landingBg.svg");
+    background-image: url("../img/LandingBg.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -51,4 +51,53 @@ body{
 .additions{
   margin-left: 20px;
   height: 128px;
+}
+
+.projects{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 200vh;
+  align-items: center;
+}
+
+/* .decoration{
+  position: absolute;
+  right: 0px;
+  z-index: -2;
+}
+
+.decoration img{
+  height: 350px;
+} */
+
+.project{
+  width: 70vw;
+  height: 70vh;
+  margin: 15vh 0vh;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  background: #FFB017;
+}
+
+.flex-textHolder{
+  display: flex;
+  flex-direction: row;
+  margin: 0px 0px 0px -40px;
+}
+
+.flex-textHolder:nth-child(2){
+    margin: -40px 0px 0px -40px;
+}
+
+.project p{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.project p:nth-child(1){
+  color: #FFB017;
+}
+
+.project p:nth-child(2){
+  color: #FFFFFF;
 }

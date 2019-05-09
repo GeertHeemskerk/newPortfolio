@@ -1,6 +1,7 @@
 body{
   font-family: 'Montserrat', sans-serif;
   width: 100vw;
+  /* overflow-x: hidden; */
 }
 
 .landing{
@@ -17,6 +18,12 @@ body{
   display: flex;
   justify-content: left;
   height: 95vh;
+}
+
+figure{
+  margin-left: 55px;
+  width: 45px;
+  height: 35px;
 }
 
 .logo{
@@ -100,4 +107,30 @@ body{
 
 .project p:nth-child(2){
   color: #FFFFFF;
+}
+
+.competences{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100vw;
+  color: #646464;
+}
+
+.comp-holder{
+  align-self: center;
+  width: 80vw;
+  height: 450px;
+}
+
+.comp-holder span{
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #FFB017;
+}
+
+svg{
+  height: 70px;
+  margin-bottom: 15px;
 }

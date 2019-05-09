@@ -1,5 +1,7 @@
 .hamburger{
   cursor: pointer;
+  width: 45px;
+  height: 45px;
   margin: 20px 0px 0px 15px;
   z-index: 4;
 

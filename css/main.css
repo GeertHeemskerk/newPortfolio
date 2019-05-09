@@ -3,6 +3,7 @@ body{
   width: 100vw;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  color: #646464;
 }
 
 .landing{
@@ -115,7 +116,6 @@ figure{
   flex-direction: column;
   text-align: center;
   width: 100vw;
-  color: #646464;
 }
 
 .comp-holder{
@@ -134,4 +134,50 @@ figure{
 .comp-holder svg{
   height: 70px;
   margin-bottom: 20px;
+}
+
+.tech{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.skills{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+}
+
+.skill{
+  width: 33%;
+  align-self: center;
+}
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 100px 0px 0px 0px;
+  width: 100%;
+  height: 50vh;
+  background: #FFB017;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.footer-content{
+  width: 100%;
+  height: 50%;
+}
+
+button{
+  display: block;
+  margin: 0 auto;
+  padding: 15px 80px;
+  background: #FFB017;
+  border: 4px solid #FFFFFF;
 }

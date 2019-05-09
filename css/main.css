@@ -1,7 +1,8 @@
 body{
   font-family: 'Montserrat', sans-serif;
   width: 100vw;
-  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .landing{

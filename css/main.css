@@ -10,7 +10,7 @@ body{
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    background-image: url("../img/LandingBg.svg");
+    background-image: url"https://lawrencecheng123.github.io/img/LandingBg.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }

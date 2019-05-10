@@ -120,7 +120,7 @@ figure{
 .comp-holder{
   align-self: center;
   width: 80vw;
-  height: 450px;
+  margin: 0px 0px 50px 0px
 }
 
 .comp-holder span{
@@ -131,8 +131,23 @@ figure{
 }
 
 .comp-holder svg{
-  height: 70px;
+  height: 100px;
   margin-bottom: 20px;
+}
+
+svg path{
+  fill: #646464;
+  -webkit-animation: opacity 6s;
+}
+
+.header svg path{
+  fill: #FFFFFF;
+  -webkit-animation: opacity 5s;
+}
+
+@-webkit-keyframes opacity{
+  from {fill-opacity: 0;}
+  to {fill-opacity: 1}
 }
 
 .tech{

@@ -36,8 +36,14 @@ figure{
 .title{
   width: 300px;
   align-self: center;
+  text-align: center;
   color: #FFFFFF;
   position: absolute;
+}
+
+.title p{
+  font-size: 12px;
+  font-weight: lighter;
 }
 
 .headTitle{

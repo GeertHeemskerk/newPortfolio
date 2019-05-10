@@ -1,7 +1,7 @@
 .hamburger{
   cursor: pointer;
   width: 45px;
-  height: 45px;
+  height: 30px;
   margin: 20px 0px 0px 15px;
   z-index: 4;
 
@@ -54,7 +54,44 @@
   top: 18px;
   width: 0%;
   left: 50%;
-  margin: 20px 0px 0px 15px;
+  margin: 50px 0px 0px 15px;
+}
+
+.hamburger.open ul{
+  visibility: visible;
+  color: #FFFFFF;
+  -webkit-animation: show 0.7s;
+  font-size: 30px;
+  margin-left: 18px;
+}
+
+.header.open{
+  z-index: 6;
+  width: 100vw;
+  height: 100vh;
+  background-color: #646464;
+  -webkit-animation: expand 0.7s;
+}
+
+li{
+  margin-top: 50px;
+}
+
+@-webkit-keyframes expand{
+  from {width: 0px;height:0px}
+  to {width: 100%;height:100%}
+}
+
+@-webkit-keyframes show{
+  from {font-size: 0px;}
+  to {font-size: 30px;}
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  width: 80vw;
 }
 
 /* Span animaties */

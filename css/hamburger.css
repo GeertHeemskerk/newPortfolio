@@ -1,7 +1,7 @@
 .hamburger{
   cursor: pointer;
   width: 35px;
-  height: 30px;
+  height: 20px;
   margin: 20px 0px 0px 15px;
   z-index: 4;
   font-weight: bold;
@@ -33,6 +33,11 @@
   transition: .5s ease-in-out;
 }
 
+
+.hamburger.open{
+  height: 30px !important;
+}
+
 .hamburger span:nth-child(2) {
   top: 8px;
   left: 0%;
@@ -60,7 +65,19 @@
   margin-left: 18px;
 }
 
+li{
+  margin-top: 50px;
+}
+
+.header{
+  position: absolute;
+  display: flex;
+  justify-content: left;
+  height: 95vh;
+}
+
 .header.open{
+  visibility: visible;
   z-index: 6;
   width: 100vw;
   height: 100vh;
@@ -68,13 +85,22 @@
   -webkit-animation: expand 0.7s;
 }
 
-li{
-  margin-top: 50px;
+.header .close{
+  z-index: 6;
+  width: 0vw;
+  height: 0vh;
+  background:rgba(000,000,000);
+  -webkit-animation: exit 0.8s;
+}
+
+@-webkit-keyframes exit{
+  from {width: 100vw; height: 100%;visibility: visible; background-color: black;}
+  to {width: 0px; height: 0%; visibility: hidden; background-color: black;}
 }
 
 @-webkit-keyframes expand{
-  from {width: 0px;}
-  to {width: 100%;}
+  from {width: 0px; height: 0%}
+  to {width: 100%; height: 100%}
 }
 
 @-webkit-keyframes show{
@@ -82,15 +108,20 @@ li{
   to {font-size: 20px;}
 }
 
+@-webkit-keyframes start{
+  from {width: 0px;}
+  to {width: 100%;x}
+}
+
 ul{
   display: flex;
   flex-direction: column;
   visibility: hidden;
-  width: 80vw;
+  width: 45vw;
 }
 
 span{
-  -webkit-animation: expand 0.7s;
+  -webkit-animation: start 0.7s;
 }
 /* Span animaties */
 

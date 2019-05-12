@@ -16,21 +16,16 @@ body{
     background-size: cover;
 }
 
-.header{
-  display: flex;
-  justify-content: left;
-  height: 95vh;
-}
-
 figure{
   width: 45px;
   height: 35px;
 }
 
 .logo{
+  position: absolute;
   width: 45px;
   height: 35px;
-  margin: 7px 10px;
+  margin: 7px 70px;
 }
 
 .title{
@@ -141,14 +136,13 @@ figure{
   margin-bottom: 20px;
 }
 
-svg path{
-  fill: #646464;
-  -webkit-animation: opacity 6s;
+.logo path{
+  fill : #FFFFFF !important;
 }
 
 .header svg path{
   fill: #FFFFFF;
-  -webkit-animation: opacity 5s;
+  -webkit-animation: opacity 4.5s;
 }
 
 @-webkit-keyframes opacity{

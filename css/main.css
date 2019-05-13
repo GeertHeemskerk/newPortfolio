@@ -3,7 +3,7 @@ body{
   width: 100vw;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  color: #646464;
+  color: #000000;
 }
 
 .landing{
@@ -11,9 +11,7 @@ body{
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    background-image: url("../img/LandingBg.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: white;
 }
 
 figure{
@@ -30,15 +28,17 @@ figure{
 
 .title{
   width: 300px;
+  font-weight: 900;
   align-self: center;
   text-align: center;
-  color: #FFFFFF;
+  color: #000000;
   position: absolute;
 }
 
 .title p{
   font-size: 12px;
   font-weight: lighter;
+  margin-bottom: 80px;
 }
 
 .headTitle{
@@ -49,7 +49,7 @@ figure{
 .title-holder{
   display: flex;
   align-items: center;
-  margin: -70px 0px 0px;
+  margin: -70px 0px 100px;
 }
 
 .preposition{
@@ -85,7 +85,7 @@ figure{
   height: 70vh;
   margin: 15vh 0vh;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
-  background: #FFB017;
+  background: #4ACD9A;
 }
 
 .flex-textHolder{
@@ -104,7 +104,7 @@ figure{
 }
 
 .project p:nth-child(1){
-  color: #FFB017;
+  color: #4ACD9A;
 }
 
 .project p:nth-child(2){
@@ -119,16 +119,22 @@ figure{
 }
 
 .comp-holder{
+  color: #646464;
   align-self: center;
   width: 80vw;
-  margin: 0px 0px 50px 0px
+  margin: 0px 0px 50px 0px;
 }
+
+.comp-holder h2{
+  color: #000000;
+}
+
 
 .comp-holder span{
   display: block;
   width: 100%;
   height: 4px;
-  background: #FFB017;
+  background: #4ACD9A;
 }
 
 .comp-holder svg{
@@ -164,6 +170,7 @@ figure{
   width: 100%;
   height: 50vh;
   text-align: center;
+  color: #646464;
 }
 
 .skill{
@@ -178,7 +185,7 @@ footer{
   margin: 100px 0px 0px 0px;
   width: 100%;
   height: 50vh;
-  background: #FFB017;
+  background: #4ACD9A;
   color: #FFFFFF;
   text-align: center;
 }
@@ -192,17 +199,53 @@ button{
   display: block;
   margin: 0 auto;
   padding: 15px 25px 15px 70px;
-  background: #FFB017;
-  border: 4px solid #FFFFFF;
+  background: #4ACD9A;
+  border: none;
   color: #FFFFFF;
+  font-weight: 700;
 }
 
 .linked{
   background-image: url("../img/LinkedIn.svg");
   background-position: -5px;
   background-repeat: no-repeat;
+  border: 4px solid #FFFFFF;
 }
 
-.hire{
+footer .hire{
   padding: 15px 25px;
+  border: 4px solid #FFFFFF;
+}
+
+.title .hire{
+  padding: 12px 40px;
+  margin-bottom: 100px;
+}
+
+/* scroll animation */
+
+.mouse{
+  width: 15px;
+  height: 35px;
+  border: 2px solid #4ACD9A;
+  margin: 0 auto;
+  border-radius: 40px;
+}
+
+.mouse::after{
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background: #4ACD9A;
+  border-radius: 7px;
+  margin-left: -2.6px;
+  opacity: 1;
+  animation: scrollAnimation 2s infinite;
+  margin-top: 5px;
+}
+
+@keyframes scrollAnimation {
+  from {opacity: 1; margin-top: 5px;}
+  to {opacity: 0; margin-top: 23px;}
 }

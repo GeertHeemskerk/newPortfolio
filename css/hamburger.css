@@ -4,7 +4,7 @@
   height: 20px;
   margin: 20px 0px 0px 15px;
   z-index: 4;
-  font-weight: bold;
+  font-weight: 600;
 
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -19,7 +19,7 @@
 .hamburger span{
   width: 35px;
   height: 2px;
-  background: #FFFFFF;
+  background: #000000;
   position: absolute;
   border-radius: 9px;
 
@@ -44,6 +44,7 @@
 }
 
 .hamburger.open span:nth-child(1) {
+  background-color: #FFFFFF;
   top: 5px;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -59,14 +60,14 @@
 
 .hamburger.open ul{
   visibility: visible;
-  color: #FFFFFF;
   -webkit-animation: show 0.7s;
   font-size: 20px;
   margin-left: 18px;
 }
 
 li{
-  margin-top: 50px;
+  margin-top: 65px;
+  color: white;
 }
 
 .header{
@@ -81,7 +82,7 @@ li{
   z-index: 6;
   width: 100vw;
   height: 100vh;
-  background:rgba(000,000,000);
+  background-color: #4ACD9A;
   -webkit-animation: expand 0.7s;
 }
 
@@ -93,9 +94,21 @@ li{
   -webkit-animation: exit 0.8s;
 }
 
+ul{
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  width: 45vw;
+}
+
+span{
+  -webkit-animation: start 0.7s;
+}
+
+
 @-webkit-keyframes exit{
-  from {width: 100vw; height: 100%;visibility: visible; background-color: black;}
-  to {width: 0px; height: 0%; visibility: hidden; background-color: black;}
+  from {width: 100vw; height: 100%;visibility: visible; background-color: #4ACD9A;}
+  to {width: 0px; height: 0%; visibility: hidden; background-color: #4ACD9A;}
 }
 
 @-webkit-keyframes expand{
@@ -113,16 +126,7 @@ li{
   to {width: 100%;x}
 }
 
-ul{
-  display: flex;
-  flex-direction: column;
-  visibility: hidden;
-  width: 45vw;
-}
 
-span{
-  -webkit-animation: start 0.7s;
-}
 /* Span animaties */
 
 /* .hamburger:hover span:nth-child(2){

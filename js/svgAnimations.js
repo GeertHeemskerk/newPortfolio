@@ -22,6 +22,4 @@ $(window).ready(function(){
       secondTrigger = true;
     }
   });
-  var mySVG = $('.logo').drawsvg();
-  mySVG.drawsvg('animate');
 });

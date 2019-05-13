@@ -90,7 +90,6 @@ li{
   z-index: 6;
   width: 0vw;
   height: 0vh;
-  background:rgba(000,000,000);
   -webkit-animation: exit 0.8s;
 }
 

@@ -191,7 +191,18 @@ footer{
 button{
   display: block;
   margin: 0 auto;
-  padding: 15px 80px;
+  padding: 15px 25px 15px 70px;
   background: #FFB017;
   border: 4px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.linked{
+  background-image: url("../img/LinkedIn.svg");
+  background-position: -5px;
+  background-repeat: no-repeat;
+}
+
+.hire{
+  padding: 15px 25px;
 }

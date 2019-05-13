@@ -3,7 +3,7 @@ body{
   width: 100vw;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  color: #000000;
+  color: #202325;
 }
 
 .landing{
@@ -31,7 +31,7 @@ figure{
   font-weight: 900;
   align-self: center;
   text-align: center;
-  color: #000000;
+  color: #202325;
   position: absolute;
 }
 
@@ -39,6 +39,12 @@ figure{
   font-size: 12px;
   font-weight: lighter;
   margin-bottom: 80px;
+}
+
+.title .hire{
+  border: 4px solid #4ACD9A;
+  padding: 12px 40px;
+  margin-bottom: 50px;
 }
 
 .headTitle{
@@ -53,13 +59,15 @@ figure{
 }
 
 .preposition{
-  font-size: 48px;
-  flex-grow: 1;
+  font-size: 50px;
 }
 
 .additions{
   margin-left: 20px;
-  height: 128px;
+}
+
+.additions h1{
+  text-align: left;
 }
 
 .projects{
@@ -87,6 +95,12 @@ figure{
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
   background: #4ACD9A;
 }
+
+#project1,
+#project2{
+    display: none;
+}
+
 
 .flex-textHolder{
   display: flex;
@@ -126,9 +140,8 @@ figure{
 }
 
 .comp-holder h2{
-  color: #000000;
+  color: #202325;
 }
-
 
 .comp-holder span{
   display: block;
@@ -184,42 +197,62 @@ footer{
   align-items: center;
   margin: 100px 0px 0px 0px;
   width: 100%;
-  height: 50vh;
-  background: #4ACD9A;
+  height: 300px;
   color: #FFFFFF;
   text-align: center;
 }
 
 .footer-content{
   width: 100%;
-  height: 50%;
+  height: 45%;
+  background: #202325;
+  color: #FFFFFF;
 }
 
 button{
   display: block;
   margin: 0 auto;
   padding: 15px 25px 15px 70px;
-  background: #4ACD9A;
   border: none;
   color: #FFFFFF;
+  background: #4ACD9A;
   font-weight: 700;
 }
 
-.linked{
-  background-image: url("../img/LinkedIn.svg");
-  background-position: -5px;
-  background-repeat: no-repeat;
-  border: 4px solid #FFFFFF;
-}
-
 footer .hire{
-  padding: 15px 25px;
+  padding: 10px 25px;
   border: 4px solid #FFFFFF;
+  background: #202325;
 }
 
-.title .hire{
-  padding: 12px 40px;
-  margin-bottom: 50px;
+.footer-content:nth-of-type(2){
+  background: #4ACD9A;
+  height: 55%;
+  color: #FFFFFF;
+}
+
+.footer-content:nth-of-type(2) h4{
+  font-weight: 600;
+}
+
+.footer-content:nth-of-type(2) p{
+  font-weight: 200;
+  font-size: 10px;
+  margin-top: 25px;
+}
+
+.iconHolder{
+  width: 100vw;
+  height: 35px;
+}
+
+.socialMedia{
+  width: 45px;
+  height: 100%;
+}
+
+.socialMedia:nth-child(1){
+  margin-right: 50px;
 }
 
 /* scroll animation */
@@ -230,6 +263,7 @@ footer .hire{
   border: 2px solid #4ACD9A;
   margin: 0 auto;
   border-radius: 40px;
+    margin-top: 70px;
 }
 
 .mouse::after{
@@ -242,6 +276,7 @@ footer .hire{
   margin-left: -2.6px;
   opacity: 1;
   animation: scrollAnimation 2s infinite;
+
   margin-top: 5px;
 }
 

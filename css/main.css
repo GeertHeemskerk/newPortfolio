@@ -6,23 +6,32 @@ body{
   color: #202325;
 }
 
+button{
+  display: block;
+  margin: 0 auto;
+  padding: 15px 25px 15px 70px;
+  border: none;
+  color: #FFFFFF;
+  background: #4ACD9A;
+  font-weight: 700;
+}
+
+h1{
+  font-size: 30px;
+  margin-top: 150px;
+}
+
+h2{
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
 .landing{
     display: flex;
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-}
-
-figure{
-  width: 45px;
-  height: 35px;
-}
-
-.logo{
-  position: absolute;
-  width: 45px;
-  height: 35px;
-  margin: 7px 70px;
 }
 
 .title{
@@ -35,155 +44,191 @@ figure{
 }
 
 .title p{
-  font-size: 12px;
-  font-weight: lighter;
+  font-size: 10px;
+  font-weight: 500;
   margin-bottom: 80px;
+  margin-top: 80px;
+  color: #A8A8A8;
 }
 
-.title .hire{
-  border: 4px solid #4ACD9A;
-  padding: 12px 40px;
-  margin-bottom: 50px;
+/* scroll animation */
+
+.mouse{
+  width: 15px;
+  height: 35px;
+  border: 2px solid #4ACD9A;
+  margin: 0 auto;
+  border-radius: 40px;
+  margin-top: 70px;
 }
 
-.headTitle{
-  text-align: center;
-  margin-top: 100px;
+.mouse::after{
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background: #4ACD9A;
+  border-radius: 7px;
+  margin-left: -2.6px;
+  opacity: 1;
+  animation: scrollAnimation 2s infinite;
+
+  margin-top: 5px;
 }
 
-.title-holder{
-  display: flex;
-  align-items: center;
-  margin: -70px 0px 100px;
+@keyframes scrollAnimation {
+  from {opacity: 1; margin-top: 5px;}
+  to {opacity: 0; margin-top: 23px;}
 }
 
-.preposition{
-  font-size: 50px;
-}
+/* The projects */
 
-.additions{
-  margin-left: 20px;
-}
-
-.additions h1{
-  text-align: left;
-}
-
-.projects{
+.project{
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 200vh;
-  align-items: center;
+  text-align: center;
 }
 
-/* .decoration{
-  position: absolute;
-  right: 0px;
-  z-index: -2;
+.pTitle{
+  width: 80vw;
+  margin: 0 auto;
 }
 
-.decoration img{
-  height: 350px;
-} */
-
-.project{
-  width: 70vw;
-  height: 70vh;
-  margin: 15vh 0vh;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
-  background: #4ACD9A;
-}
-
-#project1,
-#project2{
-    display: none;
-}
-
-
-.flex-textHolder{
-  display: flex;
-  flex-direction: row;
-  margin: 0px 0px 0px -40px;
-}
-
-.flex-textHolder:nth-child(2){
-    margin: -40px 0px 0px -40px;
+.project h2{
+  font-weight: 800;
+  font-size: 25px;
 }
 
 .project p{
-  font-size: 22px;
+  font-size: 12px;
+  color: #989898;
+  margin-bottom: 35px;
+}
+
+.pImg{
+  background: #4ACD9A;
+  width: 100vw;
+  height: 350px;
+}
+
+.imgHolder{
+  width: 100%;
+  height: 320px;
+  background-image:url('../img/mockup1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  margin-top: -310px;
+  box-shadow: 0px -15px 0px rgba(0, 0, 0, 0.25);
+}
+
+.slider{
+  display: flex;
+  flex-direction: row;
+}
+
+.slider span{
+  width: 30%;
+  height: 3px;
+  background: #A8A8A8;
+  margin: 20px 10px 0px 10px;
+  align-self: center;
+}
+
+.current{
+  margin-bottom: 15px !important;
+  background-color: #4ACD9A !important;
+}
+
+label{
+  margin-top: 20px;
+  font-weight: 800;
+}
+
+a{
+  margin-top: 40px;
+  margin-bottom: 5px;
   font-weight: 600;
 }
 
-.project p:nth-child(1){
-  color: #4ACD9A;
-}
-
-.project p:nth-child(2){
-  color: #FFFFFF;
-}
-
-.competences{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 100vw;
-}
-
-.comp-holder{
-  color: #646464;
-  align-self: center;
-  width: 80vw;
-  margin: 0px 0px 50px 0px;
-}
-
-.comp-holder h2{
-  color: #202325;
-}
-
-.comp-holder span{
-  display: block;
-  width: 100%;
-  height: 4px;
+.underline{
+  margin: 0 auto;
+  width: 150px;
+  height: 3px;
   background: #4ACD9A;
 }
 
-.comp-holder svg{
-  height: 100px;
-  margin-bottom: 20px;
+/* About me*/
+
+.aboutMe{
+  margin-top: 150px;
+  width: 100%;
+  height: 100vh;
+  background: #4ACD9A;
+  color: #FFFFFF;
+  text-align: center;
 }
 
-.logo path{
-  fill : #FFFFFF !important;
+.aboutMe h2{
+  font-weight: 600;
+  font-size: 20px;
+  padding: 20px;
 }
 
-.header svg path{
-  fill: #FFFFFF;
-  -webkit-animation: opacity 4.5s;
+.aboutMe p{
+  font-weight: 300;
+  font-size: 14px;
+  padding: 0px 20px 20px 20px;
 }
 
-.tech{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Contact me*/
+
+.contact{
+  margin-top: 150px;
   width: 100vw;
 }
 
-.skills{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 50vh;
-  text-align: center;
-  color: #646464;
+form{
+  padding: 0px 50px;
 }
 
-.skill{
-  width: 33%;
-  align-self: center;
+.contact h2{
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  margin: 0px 0px 40px 0px;
 }
+
+input, textarea{
+  font-size: 15px;
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+}
+
+form span{
+  display:inline-block;
+  width: 100%;
+  height: 2px;
+  background: #4ACD9A;
+  margin: 0px 0px 20px 0px;
+}
+
+form span:nth-child(4){
+  margin-bottom: 40px;
+}
+
+.submit{
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 14px;
+  width: 140px;
+  height: 35px;
+  background: #4ACD9A;
+  box-shadow: 4px 4px 0px rgba(55, 154, 115, 0.8);
+}
+
+/* The footer */
 
 footer{
   display: flex;
@@ -201,16 +246,6 @@ footer{
   height: 45%;
   background: #202325;
   color: #FFFFFF;
-}
-
-button{
-  display: block;
-  margin: 0 auto;
-  padding: 15px 25px 15px 70px;
-  border: none;
-  color: #FFFFFF;
-  background: #4ACD9A;
-  font-weight: 700;
 }
 
 footer .hire{
@@ -247,41 +282,6 @@ footer .hire{
 
 .socialMedia:nth-child(1){
   margin-right: 50px;
-}
-
-/* scroll animation */
-
-.mouse{
-  width: 15px;
-  height: 35px;
-  border: 2px solid #4ACD9A;
-  margin: 0 auto;
-  border-radius: 40px;
-    margin-top: 70px;
-}
-
-.mouse::after{
-  content: "";
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  background: #4ACD9A;
-  border-radius: 7px;
-  margin-left: -2.6px;
-  opacity: 1;
-  animation: scrollAnimation 2s infinite;
-
-  margin-top: 5px;
-}
-
-@keyframes scrollAnimation {
-  from {opacity: 1; margin-top: 5px;}
-  to {opacity: 0; margin-top: 23px;}
-}
-
-@keyframes test {
-  from {width: 0px; height: 0px;}
-  to {width: 70vw; height: 70vh;}
 }
 
 @-webkit-keyframes opacity{

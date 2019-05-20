@@ -11,7 +11,6 @@ body{
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    background-color: white;
 }
 
 figure{
@@ -164,11 +163,6 @@ figure{
   -webkit-animation: opacity 4.5s;
 }
 
-@-webkit-keyframes opacity{
-  from {fill-opacity: 0;}
-  to {fill-opacity: 1}
-}
-
 .tech{
   display: flex;
   flex-direction: column;
@@ -283,4 +277,14 @@ footer .hire{
 @keyframes scrollAnimation {
   from {opacity: 1; margin-top: 5px;}
   to {opacity: 0; margin-top: 23px;}
+}
+
+@keyframes test {
+  from {width: 0px; height: 0px;}
+  to {width: 70vw; height: 70vh;}
+}
+
+@-webkit-keyframes opacity{
+  from {fill-opacity: 0;}
+  to {fill-opacity: 1}
 }

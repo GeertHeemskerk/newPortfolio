@@ -2,4 +2,29 @@
   .hamburger{
     visibility: hidden;
   }
+
+  .header ul li{
+    display: none;
+  }
+
+  .header .lineHeader ul li{
+    font-size: 18px;
+    display: inline-block;
+    visibility: visible;
+    color: black;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+
+  .header .lineHeader ul{
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    width: 100vw;
+  }
+
+  .nav h2{
+    margin-right: 45%;
+  }
 }

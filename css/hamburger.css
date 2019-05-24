@@ -65,7 +65,7 @@
   margin-left: 18px;
 }
 
-li{
+.header ul li{
   margin-top: 65px;
   color: white;
 }
@@ -93,7 +93,7 @@ li{
   -webkit-animation: exit 0.8s;
 }
 
-ul{
+.header ul{
   display: flex;
   flex-direction: column;
   visibility: hidden;
@@ -147,7 +147,7 @@ ul{
 } */
 
 @media only screen and (min-width: 768px){
-  li{
+  .header li{
     font-size: 28px;
     margin-top: 85px;
   }

@@ -145,3 +145,10 @@ ul{
   color: #FFFFFF;
   content: 'close';
 } */
+
+@media only screen and (min-width: 768px){
+  li{
+    font-size: 28px;
+    margin-top: 85px;
+  }
+}

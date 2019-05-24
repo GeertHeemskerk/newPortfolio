@@ -121,7 +121,6 @@ h2{
   background-position: bottom;
   margin-top: -310px;
   box-shadow: 0px -15px 0px rgba(0, 0, 0, 0.25);
-  animation: slider 2s ease;
 }
 
 .slider{
@@ -135,11 +134,16 @@ h2{
   background: #A8A8A8;
   margin: 20px 10px 0px 10px;
   align-self: center;
+  cursor: pointer;
 }
 
 .current{
   margin-bottom: 15px !important;
   background-color: #4ACD9A !important;
+}
+
+.sliderAnimation{
+  animation: slider 2s ease;
 }
 
 @-webkit-keyframes slider{
@@ -171,7 +175,6 @@ a{
 .aboutMe{
   margin-top: 150px;
   width: 100%;
-  height: 100vh;
   background: #4ACD9A;
   color: #FFFFFF;
   text-align: center;
@@ -186,7 +189,7 @@ a{
 .aboutMe p{
   font-weight: 300;
   font-size: 14px;
-  padding: 0px 20px 20px 20px;
+  padding: 0px 30px 40px 30px;
 }
 
 /* Contact me*/
@@ -194,6 +197,7 @@ a{
 .contact{
   margin-top: 150px;
   width: 100vw;
+  height: 100vh;
 }
 
 form{

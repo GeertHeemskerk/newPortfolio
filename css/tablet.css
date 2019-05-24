@@ -1,0 +1,70 @@
+@media only screen and (min-width: 768px){
+  .title{
+    width: 550px;
+  }
+  .title h1{
+    font-size: 51px;
+  }
+  .title h2{
+    font-size: 25px;
+  }
+  .title p{
+    font-size: 13px;
+    margin-top: 250px;
+  }
+
+  .pTitle h2{
+    font-size: 28px;
+  }
+
+  .pTitle p {
+    font-size: 16px;
+  }
+
+  .pImg{
+    height: 600px;
+  }
+
+  .imgHolder{
+    height: 550px;
+    margin-top: -550px;
+  }
+
+  .aboutMe{
+    height: 50vh;
+  }
+
+  .aboutMe h2{
+    font-size: 28px;
+  }
+
+  .aboutMe p{
+    font-size: 16px;
+    padding: 0px 50px 20px 50px;
+  }
+
+  .contact{
+    height: 70vh;
+  }
+
+  .contact h2{
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  .nameHolder{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .name{
+    width: 45%;
+  }
+
+  .name:nth-child(1){
+    margin-right: 5%;
+  }
+  .name:nth-child(2){
+    margin-left: 5%;
+  }
+}

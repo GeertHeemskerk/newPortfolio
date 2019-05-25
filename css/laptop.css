@@ -129,17 +129,23 @@
     }
 
     .aboutMe{
+      height: 90vh;
       margin: 40vh 0vh 40vh 0vh;
+      clip-path: polygon(0 80%, 0 0, 100% 20%, 100% 100%);
+    }
+
+    .aboutMe h2{
+      text-align: left;
+      padding: 14% 15% 2% 20%;
     }
 
     .aboutMe p{
-      padding: 0% 15% 2% 15%;
+      padding: 0% 15% 2% 20%;
       text-align: left;
     }
     .contact h2{
       margin: 0px 0px 70px 0px;
     }
-
 
     .contact{
       width: 70vw;

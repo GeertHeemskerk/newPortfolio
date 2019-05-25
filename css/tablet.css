@@ -21,6 +21,10 @@
     font-size: 16px;
   }
 
+  .mouse::after{
+    margin-left: -4px;
+  }
+
   .pImg{
     height: 600px;
   }

@@ -5,10 +5,13 @@
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
       <script src="js/hamburger.js"></script>
+      <script src="js/slider.js"></script>
 
       <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/tablet.css">
+      <link rel="stylesheet" href="css/laptop.css">
       <link rel="stylesheet" href="css/hamburger.css">
     <title>Geert Heemskerk</title>
   </head>
@@ -26,27 +29,39 @@
           </ul>
           </div>
       </svg>
+      <div class="lineHeader">
+        <ul class="nav">
+          <h2>Geert Heemskerk</h2>
+          <li class="navItem">Home <div class="navHover"></div></li>
+          <li class="navItem">Projects</li>
+          <li class="navItem">About me</li>
+          <li class="navItem">Contact</li>
+        </ul>
+        </div>
       </div>
       <div class="title">
         <h1>Hi, my name is Geert Heemskerk.</h1>
         <h2>I love to develop and design web applications.</h2>
-        <p>I am a student @ The Hague University of applied sciences,Communication and Multimedia Design.</p>
+        <p>I am a student @ The Hague University of applied sciences,<br> Communication and Multimedia Design.</p>
         <div class="mouse"></div>
+      </div>
       </div>
     </div>
     <div class="project">
       <div class="pTitle">
-        <h2 id="pName">Project name</h2>
-        <p id="pDescription">School assignment, let two API calls communicate with eachother. </p>
+        <h2 id="pName">API challenge</h2>
+        <p id="pDescription">School challenge, let two API calls communicate with eachother. </p>
       </div>
-      <div class="pImg"></div>
-      <div class="imgHolder"></div>
+      <div class="imgSlider">
+        <div class="pImg"></div>
+        <div class="imgHolder"></div>
+      </div>
       <div class="slider">
-        <span id="s1"></span>
-        <span class="current" id="s2"></span>
+        <span class="current" id="s1"></span>
+        <span id="s2"></span>
         <span id="s3"></span>
       </div>
-      <label class="number" id="number">02.</label>
+      <label class="number" id="number">01.</label>
       <a href="#">VIEW PROJECT</a>
       <span class="underline"></span>
     </div>
@@ -57,7 +72,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <div class="contact">
-      <h2>Contact</h2>
+      <h2>Let's have a chat!</h2>
       <form id="contact-form" action="php/contact.php" method="post">
         <div class="nameHolder">
           <div class="name">
@@ -82,19 +97,5 @@
         <input class="submit" type="submit" name="submit" value="SEND EMAIL">
       </form>
     </div>
-    <footer>
-      <div class="footer-content">
-        <h4>HIRE ME</h4>
-        <button class="hire" type="button" name="button">DROP ME A LINE</button>
-      </div>
-      <div class="footer-content">
-        <h4>YOU SHOULD FOLLOW ME ON SOCIAL MEDIA</h4>
-        <div class="iconHolder">
-          <img class="socialMedia" src="img/LinkedIn.svg" alt="LinkedIN">
-          <img class="socialMedia" src="img/Insta.svg" alt="Instagram">
-        </div>
-        <p>© 2019 Geert Heemskerk. All rights reserved.</p>
-      </div>
-    </footer>
   </body>
 </html>

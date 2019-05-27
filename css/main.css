@@ -69,10 +69,9 @@ h2{
   height: 7px;
   background: #4ACD9A;
   border-radius: 7px;
-  margin-left: -2.6px;
+  margin-left: -2.8px;
   opacity: 1;
   animation: scrollAnimation 2s infinite;
-
   margin-top: 5px;
 }
 
@@ -134,12 +133,23 @@ h2{
   background: #A8A8A8;
   margin: 20px 10px 0px 10px;
   align-self: center;
+  cursor: pointer;
 }
 
 .current{
   margin-bottom: 15px !important;
   background-color: #4ACD9A !important;
 }
+
+.sliderAnimation{
+  animation: slider 2s ease;
+}
+
+@-webkit-keyframes slider{
+  from {opacity: 0; margin-left: -100vw;}
+  to {opacity: 1; margin-left: 0px;}
+}
+
 
 label{
   margin-top: 20px;
@@ -164,7 +174,6 @@ a{
 .aboutMe{
   margin-top: 150px;
   width: 100%;
-  height: 100vh;
   background: #4ACD9A;
   color: #FFFFFF;
   text-align: center;
@@ -179,7 +188,7 @@ a{
 .aboutMe p{
   font-weight: 300;
   font-size: 14px;
-  padding: 0px 20px 20px 20px;
+  padding: 0px 30px 40px 30px;
 }
 
 /* Contact me*/
@@ -187,6 +196,7 @@ a{
 .contact{
   margin-top: 150px;
   width: 100vw;
+  height: 100vh;
 }
 
 form{
@@ -204,6 +214,7 @@ input, textarea{
   font-size: 15px;
   width: 100%;
   margin: 10px 0px 10px 0px;
+  opacity: 0.7;
 }
 
 form span{
@@ -226,63 +237,12 @@ form span:nth-child(4){
   height: 35px;
   background: #4ACD9A;
   box-shadow: 4px 4px 0px rgba(55, 154, 115, 0.8);
+  opacity: 1;
 }
 
 /* The footer */
 
-footer{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 100px 0px 0px 0px;
-  width: 100%;
-  height: 300px;
-  color: #FFFFFF;
-  text-align: center;
-}
 
-.footer-content{
-  width: 100%;
-  height: 45%;
-  background: #202325;
-  color: #FFFFFF;
-}
-
-footer .hire{
-  padding: 10px 25px;
-  border: 4px solid #FFFFFF;
-  background: #202325;
-}
-
-.footer-content:nth-of-type(2){
-  background: #4ACD9A;
-  height: 55%;
-  color: #FFFFFF;
-}
-
-.footer-content:nth-of-type(2) h4{
-  font-weight: 600;
-}
-
-.footer-content:nth-of-type(2) p{
-  font-weight: 200;
-  font-size: 10px;
-  margin-top: 25px;
-}
-
-.iconHolder{
-  width: 100vw;
-  height: 35px;
-}
-
-.socialMedia{
-  width: 45px;
-  height: 100%;
-}
-
-.socialMedia:nth-child(1){
-  margin-right: 50px;
-}
 
 @-webkit-keyframes opacity{
   from {fill-opacity: 0;}

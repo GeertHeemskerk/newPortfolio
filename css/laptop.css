@@ -169,6 +169,35 @@
       margin-bottom: 75px;
     }
 
+    .underline, a{
+      display: none;
+    }
+
+    .viewProject{
+      position: absolute;
+      display: flex;
+      z-index: 4;
+      bottom: 0px;
+    }
+
+    .viewProject:hover{
+      font-weight: 800;
+    }
+
+    .viewProject:hover::after{
+      position: absolute;
+      content: "";
+      color: #4ACD9A;
+      transform: rotate(-15deg);
+      height: 20px;
+      background: #4ACD9A;
+      animation: viewHover 0.3s forwards;
+      z-index: -1;
+    }
+    @-webkit-keyframes viewHover{
+      from {opacity: 0; width: 0px; margin: 0px;}
+      to {opacity: 0.8; width: 150px;; margin: -5px 0px 0px -10px;}
+    }
   /*
     body{
       background: red;

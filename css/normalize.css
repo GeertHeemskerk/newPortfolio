@@ -7,6 +7,10 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+*:focus {
+    outline: 0;
+}
+
 
 html {
   line-height: 1.15; /* 1 */
@@ -67,6 +71,7 @@ pre {
 a {
   background-color: transparent;
   text-decoration: none;
+  color: black;
 }
 
 /**
@@ -158,6 +163,7 @@ textarea {
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
+  border: none;
 }
 
 /**

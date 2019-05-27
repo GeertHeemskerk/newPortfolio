@@ -15,7 +15,7 @@ $(window).ready(function(){
       $(".header").removeClass("close");
       hamburger.classList.toggle("open");
       header.classList.toggle("open");
-      
+
       closeTrigger = false;
 
       $(document).scroll(function(){
@@ -29,8 +29,6 @@ $(window).ready(function(){
           }
         }
       });
-      var mySVG = $('.logo').drawsvg();
-      mySVG.drawsvg('animate');
     }
   }
 });

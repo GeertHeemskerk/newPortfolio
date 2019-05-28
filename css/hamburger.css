@@ -67,6 +67,9 @@
 
 .header ul li{
   margin-top: 65px;
+}
+
+.header ul li a{
   color: white;
 }
 

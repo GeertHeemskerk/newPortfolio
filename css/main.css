@@ -1,7 +1,6 @@
 body{
   font-family: 'Montserrat', sans-serif;
   width: 100vw;
-  scroll-behavior: smooth;
   overflow-x: hidden;
   color: #202325;
 }
@@ -240,8 +239,11 @@ form span:nth-child(4){
   opacity: 1;
 }
 
-/* The footer */
+.viewProject{
+  display: none;
+}
 
+/* The footer */
 
 
 @-webkit-keyframes opacity{

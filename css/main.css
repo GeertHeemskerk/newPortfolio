@@ -196,6 +196,7 @@ a{
   margin-top: 150px;
   width: 100vw;
   height: 100vh;
+  transition: 0.5s;
 }
 
 form{
@@ -237,6 +238,7 @@ form span:nth-child(4){
   background: #4ACD9A;
   box-shadow: 4px 4px 0px rgba(55, 154, 115, 0.8);
   opacity: 1;
+  transition: 0.5s;
 }
 
 .viewProject{

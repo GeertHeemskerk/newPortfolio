@@ -172,6 +172,15 @@
 
     .submit{
       margin-bottom: 75px;
+      cursor: pointer;
+    }
+
+    .submit:hover{
+      box-shadow: none;
+    }
+
+    .nameHolder{
+      margin-bottom: 20px;
     }
 
     .underline, .project a:nth-child(5){
